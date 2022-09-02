@@ -2,7 +2,7 @@
 
 ## Usage
 
-To run these scripts manually, run the following from the document root:
+To run these scripts manually,run the following from the document root:
 
 ```
 python3 -m pytest -s
