@@ -11,7 +11,7 @@ pipeline {
              stage('Extracting Report') {
             steps {
                 echo 'Extracting Report...'
-                while not "scan_status":"succeeded" ;do
+                while( not "scan_status":"succeeded") ;do
                  sh label: '', script: '''curl -s -X GET \'http://localhost:9091/api/9hul301EYMABehoJskqLAo8qbD1F4REY/v0.1/scan\41\'    > burp_result.json
              ''' 
                 done
