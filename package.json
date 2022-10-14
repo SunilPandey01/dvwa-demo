@@ -4,6 +4,7 @@
   “description”: “Update npm vulnerable dependencies with renovate”,
   “scripts”: {},
   “dependencies”: {
-    “electron”: “8.4.0”
+    “electron”: “8.4.0”,
+    "log4js": "6.0.0"
   }
 }
