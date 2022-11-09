@@ -1,0 +1,36 @@
+############################################################################################################
+####################################### MODIFICATION AREA ###################################################
+######################## Modify these values according to your project needs.  ##############################
+### Rest of customizable values are listed in README.md section 2.1.3 Common custom configuration values  ###
+############################## Only modify them is special behaviour is needed ##############################
+#############################################################################################################
+
+#### Name of current repository for validation. It has to match the name of the repository where this file is.
+repositoryName: "cyber-security-sample-vulnerable"
+
+#### Artifactory
+artifactPath: "assure-platform/cyber-security/sample-vulberable"     #i.e: "assure-platform/underwriting/underwriting-lambda"
+artifactoryFileName: "base"   #i.e: "base", "config"
+
+# Name of the docker file to be used for build. Include path if it's required
+buildFromDockerFile: "Dockerfile"
+
+# Path where docker will be built.
+buildTarget: "."                            #i.e: "code"
+
+##### Execute install stage
+scriptName: "mvn"
+scriptParams: "clean install"
+
+##### Upload artifact (upload) and Update artifact properties (update)
+artifactRepository: "diaas-docker" #i.e: "diaas-docker"
+
+
+#############################################################################################################
+################################### END OF MODIFICATION AREA ################################################
+#############################################################################################################
+
+##### GitHub data #####
+gitHubCredential: "assure-github" # for assure, assure-external or assure-delivery org the value is: "assure-github" 
+gitEmail: "jenkins@dxc.com"
+gitUsername: "Jenkins User"
